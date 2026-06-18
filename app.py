@@ -21,7 +21,7 @@ import plotly.graph_objects as go
 # PAGE CONFIG + THEME
 # ----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="FIFA 26 Analytics Study Guide",
+    page_title="FIFA 2026 Player Ratings",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -173,6 +173,18 @@ if len(df) < 30:
     st.warning("Fewer than 30 players match the current filters — widen the filters in the "
                "sidebar for stable statistics.")
     st.stop()
+
+st.title("FIFA 2026 Player Ratings")
+st.markdown(
+    "This page is based on the EA Sports FC 26 player ratings. Every player in the "
+    "game is scored on an overall rating (0–99) built from six broad attributes — Pace, "
+    "Shooting, Passing, Dribbling, Defending and Physical — which themselves aggregate dozens "
+    "of finer sub-attributes. The dataset used here contains 18,405 players from the FIFA 26 / "
+    "FC 26 player database. After removing 2,062 goalkeepers — who are rated on a separate set "
+    "of goalkeeping attributes rather than the six outfield attributes — 16,343 outfield "
+    "players remain."
+)
+st.markdown("---")
 
 # ============================================================================
 # SECTION 1 — DESCRIPTIVES
