@@ -132,7 +132,7 @@ def nice(col):
 # ----------------------------------------------------------------------------
 # SIDEBAR — NAVIGATION + GLOBAL FILTERS
 # ----------------------------------------------------------------------------
-st.sidebar.markdown("# ⚽ FIFA 26\n### Analytics Study Guide")
+st.sidebar.markdown("# ⚽ FIFA 2026\n### Player Ratings")
 st.sidebar.markdown("---")
 
 section = st.sidebar.radio(
